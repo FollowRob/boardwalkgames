@@ -20,7 +20,15 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+}
+ 
+h1,
+h2, {
     text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -43,9 +51,22 @@ h3 {
 
 /* Header */
 
-#header .lead {
+#header .lead { 
     font-family: var(--secondary-font);  
 }
+
+/* services */
+
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
 
 
 
@@ -60,3 +81,36 @@ h3 {
     background-color: lightgrey;
 } */
 /* Temporary End */
+
+/* media queries */
+/* medium devices 768px plus */
+@media screen and (min-width: 768px) {
+/* make cards same height */ 
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* large devices 992px plus */
+@media screen and (min-width: 992px) {
+/* make cards same height */ 
+    #services .card-body {
+        min-height: autopx;
+    }
+}
+
+/* xl devices 1200px plus */
+@media screen and (min-width: 1200px) {
+/* make cards same height */ 
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices 1400px plus */
+@media screen and (min-width: 1400px) {
+/* make cards same height */ 
+    #services .card-body {
+        min-height: 195px;
+    }
+}
