@@ -91,6 +91,27 @@ color: white;
     margin-bottom: 1.5rem;
 }
 
+/* Events */
+
+#events .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
 /* footer */
 #contact {
     background-color: var(--primary-color);
@@ -126,19 +147,18 @@ color: white;
     background-color: transparent;
 }
 
-/* Temporary */
-/* .container,
-.row {
-    border:2px solid black
+/* media queries */
+/* Small screens and up */
+@media screen and (min-width: 576px) {
+    /* increase font size in events table when screen size is large enough */
+    #events .table {
+        font-size: 1rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+    }
 }
 
-.col-12 {
-    border 2px solid white;
-    background-color: lightgrey;
-} */
-/* Temporary End */
-
-/* media queries */
 /* medium devices 768px plus */
 @media screen and (min-width: 768px) {
 /* make cards same height */ 
